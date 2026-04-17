@@ -32,6 +32,9 @@
 **/Saved/ScreenShots/
 **/Saved/Builds/
 
+# VS Code 特定文件
+.vscode/
+
 # JetBrains Rider 特定文件
 .idea/
 *.idea

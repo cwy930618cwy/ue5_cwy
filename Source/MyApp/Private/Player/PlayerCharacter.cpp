@@ -1,34 +1,33 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// 请在项目设置的描述页面填写版权声明。
 
 
 #include "Player/PlayerCharacter.h"
 
-// Sets default values
+// 设置默认值
 APlayerCharacter::APlayerCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+ 	// 设置角色每帧调用 Tick()。如果不需要可以关闭，以提升性能。
 	PrimaryActorTick.bCanEverTick = true;
 
 }
 
-// Called when the game starts or when spawned
+// 游戏开始或角色生成时调用
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
-// Called every frame
+// 每帧调用
 void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 }
 
-// Called to bind functionality to input
+// 用于绑定输入功能
 void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
-

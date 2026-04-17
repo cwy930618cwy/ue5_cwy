@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// 请在项目设置的描述页面填写版权声明。
 
 #pragma once
 
@@ -12,21 +12,21 @@ class MYAPP_API APlayerCharacter : public ACharacter
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
+	// 设置角色属性的默认值
 	APlayerCharacter();
 
 protected:
-	// Called when the game starts or when spawned
+	// 游戏开始或角色生成时调用
 	virtual void BeginPlay() override;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "U|test", meta = (AllowPrivateAccess = "true"))
 	float testLenll111;
 
 public:	
-	// Called every frame
+	// 每帧调用
 	virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
+	// 用于绑定输入功能
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 };
